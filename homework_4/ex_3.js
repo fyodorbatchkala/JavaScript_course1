@@ -19,7 +19,6 @@ function createProduct(name, cost, quantity, about = 'Lorem') {
 };
 
 
-
 // Функцией createProduct можно создать те продукты, которые мы создали в задании 2. 
 
 let computer = createProduct('computer', 1000, 3, 'Это компьютер');
