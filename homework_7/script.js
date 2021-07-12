@@ -372,21 +372,33 @@ const score = {
     count: null,
     countEl: null,
 
+    /**
+     * Инициализацирует счетчик.
+     */
     init() {
         this.countEl = document.getElementById('score-count');
         this.drop();
     },
 
+    /**
+     * Инкрементирует счетчик.
+     */
     increment() {
         this.count++;
         this.render();
     },
 
+    /**
+     * Сбрасывает счетчик.
+     */
     drop() {
         this.count = 0;
         this.render();
     },
 
+    /**
+     * Отображает количество очков пользователю.
+     */
     render() {
         this.countEl.textContent = this.count;
     }
